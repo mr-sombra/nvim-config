@@ -2,7 +2,6 @@ vim.cmd("language en_US es_MX")
 
 vim.cmd("let g:netrw_liststyle = 3")
 
-local global = vim.g
 local opt = vim.opt
 
 opt.encoding = "UTF-8"
@@ -39,3 +38,7 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 -- split windows
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
+
+opt.spelllang = { "en", "es" }
+
+opt.showmode = false
