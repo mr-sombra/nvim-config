@@ -8,6 +8,9 @@ keymap.set("n", "<C-s>", "<cmd>w<CR>", { desc = "Save file" })
 
 keymap.set("i", "jk", "<esc>", { desc = "Exit insert mode" })
 
+keymap.set("n", "<leader>mv", "<cmd>MarkdownPreview<cr>", { desc = "Mardown Preview Start" })
+keymap.set("n", "<leader>ms", "<cmd>MarkdownPreviewStop<cr>", { desc = "Mardown Preview Stop" })
+
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
