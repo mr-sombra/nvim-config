@@ -85,6 +85,12 @@ return {
           capabilities = capabilities,
         })
       end,
+      ["clangd"] = function()
+        lspconfig["clangd"].setup({
+          capabilities = capabilities,
+          filetypes = { "c", "c++" },
+        })
+      end,
       ["emmet_ls"] = function()
         -- configure emmet language server
         lspconfig["emmet_ls"].setup({
