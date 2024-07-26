@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
-keymap.set("n", "<leader>ee", ":Neotree filesystem right toggle<CR>", { desc = "Toggle file explorer" })
+keymap.set("n", "<C-n>", ":Neotree filesystem right toggle<CR>", { desc = "Toggle file explorer" })
 
 keymap.set("n", "<C-s>", "<cmd>w<CR>", { desc = "Save file" })
 
